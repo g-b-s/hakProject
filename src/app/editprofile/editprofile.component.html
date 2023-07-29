@@ -1,0 +1,21 @@
+
+
+
+<div class="test">
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required formControlName="name">
+  
+    <label for="email">Address:</label>
+    <input type="email" id="address" name="address" placeholder="Enter your address" required formControlName="address">
+
+    <label for="email">College:</label>
+    <input type="email" id="college" name="college" placeholder="Enter your college" required formControlName="college">
+
+    <label for="email">Number:</label>
+    <input type="email" id="number" name="number" placeholder="Enter your number" required formControlName="number">
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+  

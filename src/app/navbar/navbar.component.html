@@ -1,0 +1,17 @@
+<div class="header">
+<a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>HAK</span></a>
+<ul class="navbar">
+  <li><a class="nav-link" routerLink="project" routerLinkActive="active">Projects</a></li>
+  <li><a class="nav-link" routerLink="components" routerLinkActive="active">Components</a></li>
+  <li><a class="nav-link" routerLink="addProject" routerLinkActive="active" *ngIf="status == 'active'">Add Project</a></li>
+  <li><a class="nav-link" routerLink="contactUs" routerLinkActive="active">Contact Us</a></li>
+  <li><a class="nav-link" routerLink="editProfile" routerLinkActive="active" *ngIf="status == 'active'">Edit Profile</a></li>
+</ul>
+<div class="main">
+  <a class="user" routerLink="Login" routerLinkActive="active" *ngIf="status !== 'active'"><i class="ri-user-fill"></i>Login</a>
+  <a class="user" routerLink="Logout" routerLinkActive="active" *ngIf="status == 'active'"><i class="ri-user-fill"></i>Logout</a>
+  <!-- <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a> -->
+  <!-- <a href="#">Register</a> -->
+  <div class="bx bx-menu" id="menu-icon" (click)="openButton()"></div>
+</div>
+</div>

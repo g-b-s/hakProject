@@ -1,0 +1,32 @@
+<!-- 
+  <div class="project-container">
+    <div class="project">
+        <img src="{{receivedData.projectImage}}" alt="">
+      <h2 class="project-title">{{receivedData.name}}</h2>
+      <p class="project-description">Description:- {{receivedData.description}}</p>
+      <p class="project-description">Cost:- {{receivedData.sellCost}}</p>
+      <p class="project-description">Field:- {{receivedData.field}}</p>
+      <a href="#" class="project-link">Read More</a>
+    </div>
+  </div> -->
+  <!-- <div class="product-card">
+    <img src="{{receivedData.projectImage}}" alt="Product Image" (click)="openImage(receivedData.projectImage)">
+    <h2 class="product-title">{{receivedData.name}}</h2>
+    <p class="product-price">${{receivedData.sellCost}}</p>
+    <p class="product-description">{{receivedData.description}}</p>
+    <button class="add-to-cart-button">Add to Cart</button>
+  </div> -->
+
+  <div class="project-page">
+    <div class="project-content">
+      <div class="project-image">
+        <img src="{{receivedData.projectImage}}" alt="Project Image" (click)="openImage(receivedData.projectImage)">
+      </div>
+      <div class="project-details">
+        <h1 class="project-title">{{receivedData.name}}</h1>
+        <p class="project-description">{{receivedData.sellCost}}</p>
+        <p class="project-info">{{receivedData.description}}</p>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </div>

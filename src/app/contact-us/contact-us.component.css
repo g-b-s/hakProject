@@ -1,0 +1,16 @@
+.main-container{
+    max-width: 1200px;
+    max-height: 700px;
+    padding: 10px;
+    padding-left: 400px;
+    }
+.h1{
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.test{
+    padding-top:85px;
+    background-color: rgba(168, 122, 122, 0.5);
+}
