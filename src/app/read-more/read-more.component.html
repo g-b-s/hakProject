@@ -26,7 +26,10 @@
         <h1 class="project-title">{{receivedData.name}}</h1>
         <p class="project-description">{{receivedData.sellCost}}</p>
         <p class="project-info">{{receivedData.description}}</p>
-        <button class="add-to-cart-button">Add to Cart</button>
+        <!-- <button type = "button" class="add-to-cart-button" (click)="buy(project.name,project.description,project.sellCost) >Add to Cart</button> -->
+        <button type="button" class="add-to-cart-button" (click)="buy(receivedData.name,receivedData.description,receivedData.sellCost, receivedData.id)">buy now</button>
       </div>
     </div>
   </div>
+
+  

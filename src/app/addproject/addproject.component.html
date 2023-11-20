@@ -1,3 +1,4 @@
+<div class="test">
 <form #f="ngForm" (ngSubmit) = "onSubmit(f)">
     <div class="background">
         <div class="register">
@@ -6,7 +7,7 @@
         <input id="name" type="text" class="text" name="p_name" placeholder="Enter Project Name" ngModel required #p_name = "ngModel">
         <span *ngIf = "p_name.invalid && p_name.touched" style="color: red;">Please Enter Project Name</span>
     </div>
-  
+
      <!-- Upload Image -->
      <div class="form-outline mb-4">
         <label>Upload Image 1</label>
@@ -29,6 +30,7 @@
             <option value="Other">Other</option>
         </select>
         <span *ngIf = "field.invalid && field.touched" style="color: red;">Please Select Field</span>
+
     </div>
     <div class="form-group">
         <input id="sell" type="number" class="text" name="sell" placeholder="Sell Cost" ngModel required #sell = "ngModel">
@@ -39,5 +41,5 @@
     </div>
         </div>
     </div>
-
 </form>
+</div>

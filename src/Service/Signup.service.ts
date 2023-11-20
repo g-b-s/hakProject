@@ -141,6 +141,10 @@ deleteProject(id:any){
     return this.http.get('https://hak-database-default-rtdb.firebaseio.com/projects/'+id+'.json');
   }
 
+  getUserById(id:any){
+    return this.http.get('https://hak-database-default-rtdb.firebaseio.com/users/'+id+'.json');
+  }
+
   getProfile(uid:any) {
     return this.http.get('https://hak-database-default-rtdb.firebaseio.com/users/'+uid+'.json');
   }

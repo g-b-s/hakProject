@@ -1,4 +1,12 @@
-<div class="test">
+<div class="button1">
+  <div class="button-container">
+ <button (click)="openDialog()">Add Component</button>
+ </div>
+</div>
+
+
+
+  <div class="test">
   <div class="container">
   <app-search (searchTextChange)="onSearchtextEntered($event)"></app-search>
     <div class="row">
@@ -7,17 +15,13 @@
                 <img src="{{component.componentImage}}" alt="">
                 <h2 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{component.name}}</h2>
                 <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100ch;">{{component.description}}</p>
-                <p><strong>Price:</strong> ${{component.cost}}</p>
+                <p class="product-cost"> ${{component.cost}}</p>
                 <button class="btn btn-primary" (click)="editComponent(component.id)">edit Component</button>
                 <br>
                 <button class="btn btn-primary" (click)=myComponents(component)>Check Out</button>
             </div>
         </ng-container>
-  
+
     </div>
   </div>
   </div>
-
-  <div class="button1">
-    <button (click)="openDialog()">Add Component</button>
-   </div>

@@ -14,9 +14,12 @@ export class ProjectPopupComponent {
   ngOnInit(): void {
   this.project=this.data
   }
-  buy(){
+  buy(projectName:any, projectDescription:any, projectCost:any){
     this.matdiaRef.closeAll;
-    this.route.navigateByUrl('contactUs');
+    // this.route.navigateByUrl('contactUs');
+console.log(projectName);
+console.log(projectDescription);
+console.log(projectCost);
 
   }
 }

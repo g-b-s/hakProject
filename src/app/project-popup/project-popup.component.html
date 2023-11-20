@@ -1,30 +1,16 @@
-<!-- <div class="card">
-    <img src="{{project.projectImage1}}" alt="Card image">
-    <div class="card-body">
-      <h2>{{project.name}}</h2>
-      <p>{{project.description}}</p>
-      <a href="#">Buy Now</a>
+<div class="wrapper">
+  <div class="product-img">
+    <img src="{{project.projectImage1}}" height="420" width="327">
+  </div>
+  <div class="product-info">
+    <div class="product-text">
+      <h1 class="card-title">{{project.name}}</h1>
+       <h2>gbs</h2>
+      <p class="card-text"> {{project.description}}</p>
     </div>
-  </div> -->
-
-  <!-- <div class="card">
-    <img src="{{project.projectImage1}}" alt="Card image">
-    <div class="card-body">
-      <h3 class="card-title">{{project.name}}</h3>
-      <p class="card-text">{{project.description}}</p>
-      <a href="#" class="btn btn-primary">Buy Now</a>
-    </div>
-  </div> -->
-
-  
-  <div class="container">
-    <div class="card">
-        <img src="{{project.projectImage}}" alt="Card image">
-        <div class="card-body">
-          <h3 class="card-title">{{project.name}}</h3>
-          <p class="card-text">{{project.description}}</p>
-          <div class="centre"><button class="btn" (click)="buy()">Buy Now</button></div>
-          
-        </div>
+    <div class="product-price-btn">
+       <p><span>{{project.sellCost}}</span>$</p>
+      <button type="button" (click)="buy(project.name,project.description,project.sellCost)">buy now</button>
     </div>
   </div>
+</div>
